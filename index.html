@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who are you?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Reset & full-screen setup */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    }
+
+    /* Video background setup */
+    .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    /* Centered content */
+    h1, h2, .options {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+    margin-top: 80px;
+    font-family: "Rouge Script", cursive;
+    font-size: 7em;
+    
+    }
+
+    h2 {
+    margin: 20px 0;
+    font-size: 1.5em;
+    }
+
+    /* Option buttons */
+    .options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    }
+
+    .options a {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    }
+
+    .options a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+    }
+
+</style>
+<body>
+    <video class="video-bg" autoplay muted loop>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <h1>Which Princess are you?</h1>
+    <h2>Choose an option</h2>
+    <div class="options">
+        <a href="op4.html">option 1</a><a href="op1.html">option 2</a><a href="op5.html">option 3</a><a href="op3.html">option 4</a><a href="op2.html">option 5</a>
+    </div>
+</body>
+</html>
